@@ -1,0 +1,9 @@
+Explain why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana.
+
+'b' + 'a' là 'ba'
+mà khi 'ba' + + 'a' thì toán tử đứng trc string sẽ ép +'a' sang kiểu number
+javascript convert 'a' but 'a' not a number 
+=> NAN
+lúc này js sẽ là 
+'ba' + 'NAN' + 'a'
+-> "baNaNa".toLowerCase()
